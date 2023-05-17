@@ -302,7 +302,7 @@ header nav:hover .linkes ul {
 }
 
 .all-card {
-  max-width: 300px;
+  max-width: 277px;
   flex-flow: column;
   border: 10px solid rgba(45, 54, 172, 0.096);
   padding: 50px;
