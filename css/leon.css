@@ -1,12 +1,12 @@
 /* start variables */
 :root {
-    --background-color-section-1: rgb(227 229 239 / 29%);
-    --color-h-after: rgb(245 0 0);
-    --span: #0077ff;
-    --color-p: #00000094;
-    --transition-time: 0.5s;
-    --padding: 50px 20px;
-    --margin-top: 20px;
+  --background-color-section-1: rgba(120, 202, 202, 0.151);
+  --color-h-after:rgba(245, 0, 0, 0.589);
+  --span:rgba(245, 0, 0, 0.589);
+  --color-p:#333333;
+  --transition-time:0.5s ;
+  --padding: 50px 20px;
+  --margin-top: 20px;
 }
 
 /* end variables */
@@ -234,7 +234,7 @@ header nav:hover .linkes ul {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgb(161 41 41 / 22%);
+  background-color: #2310ce2c;
 }
 
 .view .welcome {
@@ -312,7 +312,7 @@ header nav:hover .linkes ul {
 
 .all-card i {
   font-size: 50px;
-  color: rgb(255 153 0 / 55%);
+  color: rgb(74, 53, 143);
   margin-bottom: 10px;
   text-align: center;
 }
