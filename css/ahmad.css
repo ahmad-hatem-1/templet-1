@@ -1,6 +1,6 @@
 :root {
     --background-color-section-1: rgba(120, 202, 202, 0.151);
-    --color-h-after: rgba(245, 0, 0, 0.589);
+    --color-h-after: #333;
     --span: #b0e0e6;
     --color-p: #333;
     --transition-time: .5s;
@@ -261,10 +261,60 @@ header nav:hover .linkes ul {
     color: #fff
 }
 
-.view .welcome p {
+.view .welcome .text {
+    position: relative;
+    min-width: 300px;
+    text-align: center;
+}
+
+.view .welcome .text p {
+    right: -10%;
+    position: absolute;
     color: rgba(255, 255, 255, 0.767);
-    margin-top: 50px;
-    font-size: 20px
+    direction: rtl;
+    width: fit-content;
+    color: #fff;
+    font-size: 20px;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-left: 2px solid rgb(255, 217, 0);
+    word-wrap: break-word;
+    animation: ahmed 5s 1s 2 steps(39) both, a 0.5s infinite;
+    overflow: hidden;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+@media (max-width:376px) {
+    
+.view .welcome .text p {
+margin-top: 10px;
+}
+}
+
+@keyframes ahmed {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 360px;
+
+
+    }
+
+}
+
+@keyframes a {
+    from {
+        border-left-color: rgb(255, 255, 255);
+
+    }
+
+    to {
+        border-left-color: rgba(255, 255, 255, 0.418);
+    }
+
 }
 
 .go-down {
@@ -424,6 +474,48 @@ header nav:hover .linkes ul {
 .portofolio .container .cards-port .all-card-port .cont-templet p {
     font-size: 13px;
     line-height: 35px
+}
+
+.portofolio .container a {
+    display: block;
+    width: 250px;
+    height: 250px;
+    font-size: 250px;
+    margin: 100px auto;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.portofolio .container a:hover i {
+    animation-play-state: paused;
+    background-color: var(--color-h-after);
+
+}
+
+.portofolio .container a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: skale 3s infinite both ease-in alternate;
+    border-radius: 50%;
+    transition: 0.3s;
+    transition-property: background-color;
+
+}
+
+@keyframes skale {
+
+    0%,
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: var(--color-h-after);
+    }
+
 }
 
 .about .container {
