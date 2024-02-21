@@ -45,14 +45,18 @@ opacity: 1;
     spred.style.cssText = " animation: spred 2s 2s  1 alternate forwards ;"
 }
 onscroll = function () {
-    
-    scrollY >= 800 ? this.document.querySelector("header").style.cssText = `
+    document.querySelector("header").style.cssText = `
+    position:fixed !important ;
+    `
+    scrollY >= 700 ? this.document.querySelector("header").style.cssText = `
     filter: blur(0px);
+    position:fixed !important ;
     background: rgba( 255, 255, 255, 0.15 ) !important;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
     backdrop-filter: blur( 20px ) !important;
     -webkit-backdrop-filter: blur( 20px ) !important;
     `: this.document.querySelector("header").style.cssText = `
+    position:absolute !important ;
     filter: blur(0px);
     background: rgba( 255, 255, 255, 0.9 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
